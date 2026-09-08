@@ -10,6 +10,7 @@ YAML frontmatter: `name`, `description`) plus any supporting `references/`,
 
 | Skill | Description |
 | --- | --- |
+| [`repo-rundown`](repo-rundown/) | Orients you in an unfamiliar codebase — tech stack, architecture, data flow, repo layout for navigation, and gotchas — delivered one section at a time. |
 | [`tech-tutor`](tech-tutor/) | Walks through a software engineering technology or concept conversationally, one small piece at a time, checking in before moving on. |
 
 ## Using a skill

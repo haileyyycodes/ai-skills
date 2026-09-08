@@ -1,0 +1,23 @@
+{
+  "skill_name": "repo-rundown",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I just cloned this repo and I've never seen it before. Can you give me a rundown so I know where to start?",
+      "expected_output": "Recon of the actual repo, then section 1 (tech stack) delivered on its own with a check-in offering to expand or move to architecture. Does not dump all five sections at once. Tech stack facts pulled from real manifest/config files, not guessed.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "New job, first day in this codebase. Walk me through the whole thing end to end - stack, how it's put together, how data moves, where everything lives, and anything weird I should watch out for. I'd rather just read it all in one go than go back and forth.",
+      "expected_output": "User explicitly opted out of the section-by-section check-ins, so all five sections delivered in order in one response: tech stack, architecture, data flow, repo layout (with concrete 'to add X touch these files' recipes), gotchas. Still concrete and grounded in the real repo.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Can you write up an onboarding doc for this repo that I can commit for the next person? Cover the architecture, the layout, and the setup gotchas.",
+      "expected_output": "Writes REPO-RUNDOWN.md at the repo root (user asked for something committable), building it section by section. Sections grounded in real files. Still runs interactively unless told otherwise.",
+      "files": []
+    }
+  ]
+}
